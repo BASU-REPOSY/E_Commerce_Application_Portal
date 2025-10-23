@@ -1,0 +1,16 @@
+<div class="login-card">
+  <h2>Login</h2>
+  <form (submit)="login(); $event.preventDefault()">
+    <label>
+      Username
+      <input type="text" [(ngModel)]="username" name="username" />
+    </label>
+
+    <label>
+      Password
+      <input type="password" [(ngModel)]="password" name="password" />
+    </label>
+
+    <button type="submit">Sign in</button>
+  </form>
+</div>
