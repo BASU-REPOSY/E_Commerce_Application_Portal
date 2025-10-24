@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { Nav } from '../nav/nav';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  imports: [],
+ selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss'],
+  standalone: true,
+  imports: [RouterModule, Nav]
 })
 export class Home {
 
