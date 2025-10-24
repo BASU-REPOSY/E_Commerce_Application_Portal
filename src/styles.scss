@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+// Import Bootstrap functions, variables, and mixins
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Custom variables and overrides can go here
+$primary: #007bff;
+$secondary: #6c757d;
+
+// Import Bootstrap and its default components
+@import "bootstrap/scss/bootstrap";
+
+// Your custom styles below
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 2rem;
+}
+
+// Add any additional custom styles here
